@@ -13,12 +13,12 @@ async function checkWeather() {
     const wind = Math.ceil(Number(data.wind.speed))
     const sky = data.weather[0].main
     if (sky == 'Clear') {
-        document.querySelector('img#sky').src = 'images/clear.png'
+        document.querySelector('img#sky').src = 'https://i.ibb.co/1XgG6yp/clear.png'
         form.style.background = "linear-gradient(312deg, rgba(255,165,0,1) 21%, rgba(255,244,124,1) 89%)"
     } else if (sky == 'Clouds') {
-        document.querySelector('img#sky').src = 'images/clouds.png'
+        document.querySelector('img#sky').src = 'https://i.ibb.co/F5W9gnB/clouds.png'
     } else if (sky == 'Rain') {
-        document.querySelector('img#sky').src = 'images/rain.png'
+        document.querySelector('img#sky').src = 'https://i.ibb.co/xqJ19sc/rain.png'
     } else if (sky == 'Snow') {
         document.querySelector('img#sky').src = 'images/snow.png'
     }
