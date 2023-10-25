@@ -20,7 +20,7 @@ async function checkWeather() {
     } else if (sky == 'Rain') {
         document.querySelector('img#sky').src = 'https://i.ibb.co/xqJ19sc/rain.png'
     } else if (sky == 'Snow') {
-        document.querySelector('img#sky').src = 'images/snow.png'
+        document.querySelector('img#sky').src = 'https://i.ibb.co/zSmQ9tw/snow.png'
     }
     document.querySelector('div#temp').innerHTML = `${temp}°` 
     document.querySelector('div#city').innerHTML = city1
