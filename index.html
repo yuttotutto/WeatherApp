@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Weather App - Prototype</h1>
+    <div id="card">
+        <div id="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false" id="searchbar" value="Kortrijk">
+            <button onclick="checkWeather()" id="submit"><img src="images/search.png" id="search-btn"></button>
+        </div>
+        <div id="info">
+            <img src="images/clouds.png" id="sky">
+            <div id="temp"></div>
+            <div id="city"></div>
+        </div>
+        <div id="extra-info">
+            <div id="humidity">
+                <img src="images/humidity.png" alt="">
+                <div class="block">
+                    <div id="hum-value"></div>
+                    <span>Humidity</span>
+                </div>
+            </div>
+            <div id="wind">
+                <img src="images/wind.png" alt="">
+                <div class="block">
+                    <div id="wind-value"></div>
+                    <span>Wind Speed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>@Joseph_Sartor
+        <div id="clock"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
